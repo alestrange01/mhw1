@@ -83,10 +83,11 @@ header.sopra{
 h1.Titolo{
     font-family: 'Copperplate', sans-serif;
     font-weight: bold;
-    font-size: calc(24px + 3vw);
+    font-size: calc(20px + 2vw);
     /* font-size: 1.5rem; */
     text-shadow: 10px 2px 10px #ffffff, 2px 2px 10px #000000, 3px 3px 0px #ffffff;
     text-align: center;
+    max-width: 780px;
 }
 
 .fotomia{
@@ -95,6 +96,7 @@ h1.Titolo{
     justify-content: center;
     align-items: center;
     margin-top: -50px;
+    margin-bottom: 60px;
   }
 
   .fotomia img {
@@ -103,6 +105,19 @@ h1.Titolo{
     height: 100px;
     border: black solid 3px;
   }
+
+  .fotomia p{
+    margin: 5px;
+    /* margin-bottom: 0; */
+    font-size: calc(14px + 0.5vw);
+    font-style: italic;
+    font-family: 'Baskervville', serif;  
+  }
+
+#sbarra{
+  height: 3px;
+  background-color: rgba(0,0,0,0.3);
+}
 
 
   #tagmio:visited{
@@ -113,7 +128,6 @@ h1.Titolo{
   }
   #tagmio{
     text-decoration: none;
-    margin-bottom: 60px;
   }
 
   section.lista{
@@ -121,7 +135,7 @@ h1.Titolo{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 30px;
+    /* margin: 30px; */
   }
 
   div.introduzione{
@@ -223,6 +237,7 @@ span.centro{
 .centro p{
   padding-left: 2px;
   margin-bottom: 20px;
+  line-height: normal;
 }
 
 .centro p strong{
@@ -267,7 +282,7 @@ div .centroimg .immagine{
   #fine{
     background: linear-gradient(to top, #333333, #cccccc);
     /* font-family: 'Space Grotesk', sans-serif; */
-    font-family: 'Great Vibes', cursive, sans-serif;
+    /* font-family: 'Great Vibes', cursive, sans-serif; */
     font-family: 'Tangerine', cursive, sans-serif;
 
     font-size: 2em;
