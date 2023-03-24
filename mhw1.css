@@ -1,293 +1,298 @@
 body{
-    margin: 0;
-    background-color: #f6efef;
+  margin: 0;
+  background-color: #f6efef;
 }
 
 nav.alto{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
 
 a.tondi{
-    font-size: calc(10px + 1vw);
-    font-family: 'Times New Roman', Times, serif;
-    background-color: grey;
-    color: #f6efef;
-    border-radius: 15px;
-    margin-top: 5px;
-    padding: 5px 5px;
-    text-decoration: none;
+  font-size: calc(10px + 1vw);
+  font-family: 'Times New Roman', Times, serif;
+  background-color: grey;
+  color: #f6efef;
+  border-radius: 15px;
+  margin-top: 5px;
+  padding: 5px 5px;
+  text-decoration: none;
 }
 
 a.tondi:hover{
-  background-color: #f6efef;
-  color: grey;
+background-color: #f6efef;
+color: grey;
 }
 
 #menu{
-  display: none;
+width: 100vw;
+display: none;
+position: absolute;
+top: 0;
 }
 
 #menu div{
-  width: 25px;
-  height: 3px;
-  background-color: #333333;
-  /* margin: 5px 0; */
+width: 25px;
+height: 3px;
+background-color: #f6efef;
+margin: 3px;
+/* margin: 5px 0; */
 }
 
 @media (max-width:500px){
-  nav.alto{
-    display: none;
-  }
+nav.alto{
+  display: none;
+}
 
-  #menu{
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-    margin-top: 2px;
-    margin-bottom: 0;
-  }
+header.sopra{
+  flex-direction: column;
+  align-items:flex-start;
+}
 
-  #menu div{
-    margin: 3px;
-  }
+#menu{
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  margin-top: 5px;
+
+}
 }
 
 
 
 #overlay{
-  background-color: rgba(0,0,0,0.3);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
+background-color: rgba(0,0,0,0.3);
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
 }
 
 header.sopra{
-  background-image: url(cucina.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
+background-image: url(cucina.jpg);
+background-size: cover;
+background-position: center;
+height: 500px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: -1;
 }
 
 
 h1.Titolo{
-    font-family: 'Copperplate', sans-serif;
-    font-weight: bold;
-    font-size: calc(20px + 2vw);
-    /* font-size: 1.5rem; */
-    text-shadow: 10px 2px 10px #ffffff, 2px 2px 10px #000000, 3px 3px 0px #ffffff;
-    text-align: center;
-    max-width: 780px;
+  font-family: 'Copperplate', sans-serif;
+  font-weight: bold;
+  font-size: calc(20px + 2vw);
+  /* font-size: 1.5rem; */
+  text-shadow: 10px 2px 10px #ffffff, 2px 2px 10px #000000, 3px 3px 0px #ffffff;
+  text-align: center;
+  max-width: 780px;
 }
 
 .fotomia{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -50px;
-    margin-bottom: 60px;
-  }
-
-  .fotomia img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: black solid 3px;
-  }
-
-  .fotomia p{
-    margin: 5px;
-    /* margin-bottom: 0; */
-    font-size: calc(14px + 0.5vw);
-    font-style: italic;
-    font-family: 'Baskervville', serif;  
-  }
-
-#sbarra{
-  height: 3px;
-  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  margin-bottom: 60px;
 }
 
+.fotomia img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: black solid 3px;
+}
 
-  #tagmio:visited{
-    color: black;
-  }
-  #tagmio:hover{
-    color: crimson;
-  }
-  #tagmio{
-    text-decoration: none;
-  }
+.fotomia p{
+  margin: 5px;
+  /* margin-bottom: 0; */
+  font-size: calc(14px + 0.5vw);
+  font-style: italic;
+  font-family: 'Baskervville', serif;  
+}
 
-  section.lista{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    /* margin: 30px; */
-  }
+.aggiornamento p{
+  text-decoration: underline;
+  text-decoration-color: rgba(0,0,0,0.3);
+  text-underline-offset: 8px;
+}
 
+#tagmio:visited{
+  color: black;
+}
+#tagmio:hover{
+  color: crimson;
+}
+#tagmio{
+  text-decoration: none;
+}
+
+section.lista{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* margin: 30px; */
+}
+
+div.introduzione{
+  /* border: black solid 3px; */
+  width: 66.67vw;
+}
+
+@media (max-width:500px){
   div.introduzione{
-    /* border: black solid 3px; */
-    width: 66.67vw;
+    width: 85vw;
   }
+}
 
-  @media (max-width:500px){
-    div.introduzione{
-      width: 85vw;
-    }
-  }
+.lista p{
+  font-size: calc(13px + 0.5vw);
+  /* font-size: 1.3em; */
+  margin: auto;
+}
 
-  .lista p{
-    font-size: calc(13px + 0.5vw);
-    /* font-size: 1.3em; */
-    margin: auto;
-  }
+.oggettolista{
+  display: flex;
+  justify-content:flex-start;
 
-  .oggettolista{
-    display: flex;
-    justify-content:flex-start;
-
-    /* border: black solid 3px;
-    border-radius: 30%; */
-    /* height: 310px; */
-    width: 66.67vw;
-    margin:120px;
-  }
+  /* border: black solid 3px;
+  border-radius: 30%; */
+  /* height: 310px; */
+  width: 66.67vw;
+  margin:120px;
+}
 
 @media (max-width: 500px){
-  .oggettolista{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
+.oggettolista{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 }
 
 
 span.sinistra p{
-    border: black solid 2px;
-    border-radius: 20%;
-    /* font-size: 40px; */
-    /* font-size: 2.5em; */
-    font-size: calc(30px + 1.5vw);
-    font-style: italic;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-right: 40px;
-    background: linear-gradient(to left, #c3bbbb, #dfdcdc);
-    height: fit-content;
+  border: black solid 2px;
+  border-radius: 20%;
+  /* font-size: 40px; */
+  /* font-size: 2.5em; */
+  font-size: calc(30px + 1.5vw);
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-right: 40px;
+  background: linear-gradient(to left, #c3bbbb, #dfdcdc);
+  height: fit-content;
 }
 
 @media (max-width:500px){
-  span.sinistra {
-    width: fit-content;
-    margin-bottom: 5px;
-    margin-right: -40px;
-  }
+span.sinistra {
+  width: fit-content;
+  margin-bottom: 5px;
+  margin-right: -40px;
+}
 }
 
 
 
 span.centro{
-    border: rgb(183, 182, 182) solid 3px;
-    background: linear-gradient(to bottom, #e7e0e0, #cccccc);
-    width: 66.67vw;
-    /* max-height: 40vh; */
-    /* overflow:scroll; */
-    /* line-height: 20px; */
+  border: rgb(183, 182, 182) solid 3px;
+  background: linear-gradient(to bottom, #e7e0e0, #cccccc);
+  width: 66.67vw;
+  /* max-height: 40vh; */
+  /* overflow:scroll; */
+  /* line-height: 20px; */
 }
 
 @media (max-width:500px){
-  span.centro{
-    width: 85vw;
-  }
+span.centro{
+  width: 85vw;
+}
 }
 
 .centro .nomevoto{
-  margin-left: 5px;
+margin-left: 5px;
 }
 
 .centro .nomevoto h1{
-  /* margin: 10px 5px; */
-  font-family: 'Bona Nova', serif;
-  font-size: 2.5em;
-  margin-bottom: 0px;
-  margin-top: 5px;
+/* margin: 10px 5px; */
+font-family: 'Bona Nova', serif;
+font-size: 2.5em;
+margin-bottom: 0px;
+margin-top: 5px;
 }
 
 .centro .nomevoto h3{
-  color: rgb(63, 58, 66);
-  font-size: 15px;
-  font-size: 1.3em;
-  /* margin: 2px 5px; */
-  margin-top: 0px;
+color: rgb(63, 58, 66);
+font-size: 15px;
+font-size: 1.3em;
+/* margin: 2px 5px; */
+margin-top: 0px;
 }
 
 .centro p{
-  padding-left: 2px;
-  margin-bottom: 20px;
-  line-height: normal;
+padding-left: 2px;
+margin-bottom: 20px;
+line-height: normal;
 }
 
 .centro p strong{
-  font-size: 2em;
-  letter-spacing: 1px;
+font-size: 2em;
+letter-spacing: 1px;
 }
 
 div.centroimg{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
 div .centroimg .immagine{
-    height: 40%;
-    width: 40%;
-    margin-bottom: 5px;
+  height: 40%;
+  width: 40%;
+  margin-bottom: 5px;
 }
 
 @media (max-width:500px){
-  div .centroimg .immagine{
-    height: 70%;
-    width: 70%;
-  }
+div .centroimg .immagine{
+  height: 70%;
+  width: 70%;
+}
 }
 
 .ricette:visited{
-    color: #000000;
+  color: #000000;
 }
 
 .ricette:hover{
-    color: crimson;
+  color: crimson;
 }
 .ricette{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 
 
 
-  #fine{
-    background: linear-gradient(to top, #333333, #cccccc);
-    /* font-family: 'Space Grotesk', sans-serif; */
-    /* font-family: 'Great Vibes', cursive, sans-serif; */
-    font-family: 'Tangerine', cursive, sans-serif;
+#fine{
+  background: linear-gradient(to top, #333333, #cccccc);
+  /* font-family: 'Space Grotesk', sans-serif; */
+  /* font-family: 'Great Vibes', cursive, sans-serif; */
+  font-family: 'Tangerine', cursive, sans-serif;
 
-    font-size: 2em;
-    font-size: calc(20px + 1.5vw);
-    height: 40px;
-    text-align: center;
-    padding: 40px;
+  font-size: 2em;
+  font-size: calc(20px + 1.5vw);
+  height: 40px;
+  text-align: center;
+  padding: 40px;
 }
